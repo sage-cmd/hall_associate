@@ -1,0 +1,97 @@
+{
+  "planHash": "965f489a19ac6b79ca3edce39ae656b7c0be4fe440adc56acd40e0488fe1ffff",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-08T19:48:12.0714770Z",
+  "retryCount": 2,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E hall-associate@1.0.0 build\r\n\u003E prisma generate \u0026\u0026 next build\r\n\r\nLoaded Prisma config from prisma.config.ts.\r\n\r\nPrisma schema loaded from prisma\\schema.prisma.\r\n\r\n\u2714 Generated Prisma Client (v7.10.1) to .\\node_modules\\@prisma\\client in 255ms\r\n\r\nStart by importing your Prisma Client (See: https://pris.ly/d/importing-client)\r\n\r\n\r\n\u25B2 Next.js 16.4.5 (Turbopack)\r\n- Environments: .env\r\n\u2713 Running next.config.ts took 133ms\r\n\r\n  Creating an optimized production build ...\r\n\u2713 Compiled successfully in 3.5s\r\n  Running TypeScript ...\r\n  Finished TypeScript in 7.8s ...\r\n  Collecting page data using 3 workers ...\r\n  Generating static pages using 3 workers (0/6) ...\r\n  Generating static pages using 3 workers (1/6) \r\n  Generating static pages using 3 workers (2/6) \r\n  Generating static pages using 3 workers (4/6) \r\n\u2713 Generating static pages using 3 workers (6/6) in 1482ms\r\n  Finalizing page optimization ...\r\n\r\nRoute (app)\r\n\u250C \u25CB /\r\n\u251C \u25CB /_not-found\r\n\u251C \u0192 /api/consultations\r\n\u251C \u25CB /privacy\r\n\u2514 \u25CB /terms\r\n\r\n\r\n\u25CB  (Static)   prerendered as static content\r\n\u0192  (Dynamic)  server-rendered on demand\r\n\r\n",
+        "durationMs": 37390
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E hall-associate@1.0.0 test\r\n\u003E vitest run\r\n\r\n\r\n RUN  v5.1.0 C:/Users/Lenovo/hall_associate\r\n\r\n\r\n Test Files  1 passed (1)\r\n      Tests  3 passed (3)\r\n   Start at  07:47:51\r\n   Duration  979ms (import 83%, transform 8%, tests 5%, worker 4%)\r\n\r\n",
+        "durationMs": 3620,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 3,
+          "testsPassed": 3,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      },
+      {
+        "name": "home-page-responds",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022en\u0022 class=\u0022cormorant_garamond_8eb1105c-module__YVDx9G__variable dm_sans_1b590f06-module__St2SeG__variable\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 imageSrcSet=\u0022/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=640\u0026amp;q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=750\u0026amp;q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=828\u0026amp;q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=1080\u0026amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=1200\u0026amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=1920\u0026amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=2048\u0026amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26w%3D2200%26q%3D85\u0026amp;w=3840\u0026amp;q=75 3840w\u0022 imageSizes=\u0022100vw\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/chunks/%5Broot-of-the-server%5D__1wpc_t-0hwmpx._.css\u0022 data-precedence=\u0022next_static/chunks/[root-of-the-server]__1wpc_t-0hwmpx._.css\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0fb9-gqu7_t97._.js\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_client_1165-soo5tfpf._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/_1anvha4rlo79g._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/turbopack-_11q0wbt2n0d9y._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/_219uq1sj0q91c._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_framer-motion_dist_es_0lwe-unnp69ns._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_motion-dom_dist_es_0_hnrlb85o6gc._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_0q79z23r57r2s._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_1xmdlti4x0-0k._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/src_1obqk6cqecirn._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_next_dist_1aa47hljo-d43._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_react-hook-form_dist_index_esm_mjs_0b0kr13k-yekm._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_zod_v4_classic_0nzw-26z8uv_w._.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/node_modules_zod_v4_core_14qn2mg1f8pkp._.js\u0022 async=\u0022\u0022\u003E\n\u2026[truncated]",
+        "durationMs": 19113
+      }
+    ],
+    "executions": [
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Lenovo\\hall_associate",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test"
+        ],
+        "cwd": "C:\\Users\\Lenovo\\hall_associate",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "home-page-responds",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev"
+        ],
+        "cwd": "C:\\Users\\Lenovo\\hall_associate",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}

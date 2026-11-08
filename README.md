@@ -18,10 +18,9 @@ npm run db:generate
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Set `DATABASE_URL` in `.env` to a SQLite connection string;
-the example uses `file:./dev.db`.
+Open [http://localhost:3000](http://localhost:3000). Set `DATABASE_URL` in `.env` to a PostgreSQL connection string.
 
-The concept form validates submissions with Zod on the server and stores them in SQLite. Do not enter real personal,
+The concept form validates submissions with Zod on the server and stores them in PostgreSQL. Do not enter real personal,
 confidential or sensitive information. Submissions are not monitored, do not reach a legal professional, and do not
 create a lawyer–client relationship. See the site's [privacy notice](/privacy) and [terms of use](/terms).
 
@@ -35,5 +34,5 @@ npm run db:deploy
 npm run start
 ```
 
-Apply committed migrations with `npm run db:deploy` in a deployment environment. SQLite storage is intended for local
-demonstration; configure persistent storage and an appropriate database strategy before deploying a real service.
+Apply committed migrations with `npm run db:deploy` in a deployment environment. Configure persistent PostgreSQL
+storage before deploying a real service.
