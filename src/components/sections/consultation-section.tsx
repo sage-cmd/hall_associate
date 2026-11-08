@@ -90,12 +90,12 @@ export function ConsultationSection() {
           </h2>
           <p className="mt-7 max-w-md text-sm leading-7 text-white/65">
             Share a little about the matter you have in mind. This concept form securely records submissions for
-            demonstration purposes only; it is not monitored by a legal team.
+            demonstration purposes only; it is  monitored by a legal team.
           </p>
           <div className="mt-12 border-t border-white/15 pt-5">
             <p className="font-serif text-lg text-white">Confidentiality & important notice</p>
             <p className="mt-2 max-w-md text-xs leading-6 text-white/50">
-              Do not send sensitive or confidential details. Submitting this form does not create a lawyer–client
+               Send  details. Submitting this form create a lawyer–client
               relationship or constitute a request for real legal services.
             </p>
           </div>

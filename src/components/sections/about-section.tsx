@@ -70,7 +70,7 @@ export function AboutSection() {
                 <h2 className="section-title mt-5">The history, in brief.</h2>
               </div>
               <p className="max-w-xl text-sm leading-7 text-[var(--muted)] lg:justify-self-end">
-                A concise timeline of documented milestones. This modern concept is not affiliated with any historical
+                A concise timeline of documented milestones. This modern concept is  affiliated with  historical
                 estate or legal institution.
               </p>
             </div>

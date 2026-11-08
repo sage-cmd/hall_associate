@@ -31,7 +31,7 @@ export function HeroSection() {
           >
             <p className="mb-7 flex items-center gap-3 text-[10px] uppercase tracking-[0.32em] text-[#D4B474] sm:text-xs">
               <span className="h-px w-9 bg-[#C6A15B]" />
-              A historical-concept firm
+              A historical firm
             </p>
             <h1 className="font-serif text-[clamp(3.35rem,8vw,7.15rem)] leading-[0.91] tracking-[-0.055em]">
               The art of
@@ -43,8 +43,8 @@ export function HeroSection() {
               respect for the law.
             </p>
             <p className="mt-4 max-w-lg text-sm leading-7 text-white/60">
-              An imagined modern chambers inspired by the legacy of the celebrated British barrister. Created for
-              historical and illustrative purposes; not a legal practice.
+              An imagined modern chambers inspired by the legacy of the celebrated British barrister. For
+              legal purposes; and legal practice.
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Button asChild>
