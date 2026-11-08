@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Consultation {
+  id           String   @id @default(cuid())
+  fullName     String
+  email        String
+  phone        String
+  practiceArea String
+  caseDetails  String
+  status       String   @default("NEW")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([createdAt])
+}

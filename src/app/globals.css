@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f5ef;
+  --foreground: #1c1c1c;
+  --surface: #f0ece4;
+  --line: #ded8cd;
+  --muted: #696760;
+  --gold: #846328;
+  --navy: #0b1628;
+}
+
+.dark {
+  --background: #111820;
+  --foreground: #f4f0e8;
+  --surface: #18212b;
+  --line: #303943;
+  --muted: #b0aea8;
+  --gold: #d3b16d;
+  --navy: #0b1628;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-body), Arial, sans-serif;
+}
+
+::selection {
+  color: #111820;
+  background: #d9c08e;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--gold);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.eyebrow-rule {
+  display: inline-block;
+  height: 1px;
+  width: 2rem;
+  background: var(--gold);
+}
+
+.section-title {
+  color: var(--foreground);
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  letter-spacing: -0.035em;
+  line-height: 1.03;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
