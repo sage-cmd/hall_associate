@@ -1,6 +1,6 @@
 # Hall & Associates
 
-An editorial, historical-concept website inspired by Edward Marshall Hall (1857–1927). It is fictional, is not
+An editorial, historical-concept website inspired by Edward Marshall Hall (1954–2026). It is fictional, is not
 affiliated with a practising law firm or historical estate, and does not provide legal services or legal advice.
 
 ## Requirements

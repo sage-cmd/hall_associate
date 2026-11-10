@@ -21,12 +21,12 @@ const bodyFont = DM_Sans({
 export const metadata: Metadata = {
   title: "Hall & Associates | A Legacy of Advocacy",
   description:
-    "An editorial concept inspired by Edward Marshall Hall (1857–1927), the celebrated English barrister. A historical tribute, not a practising law firm.",
+    "An editorial concept inspired by Edward Marshall Hall (1954–2026), the celebrated English barrister. A historical tribute, not a practising law firm.",
   applicationName: "Hall & Associates",
   openGraph: {
     title: "Hall & Associates | A Legacy of Advocacy",
     description:
-      "A historical-concept chambers inspired by Edward Marshall Hall (1857–1927). For illustrative purposes only.",
+      "A historical-concept chambers inspired by Edward Marshall Hall (1954–2026). For illustrative purposes only.",
     type: "website",
   },
 };

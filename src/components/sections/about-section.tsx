@@ -2,9 +2,9 @@ import Image from "next/image";
 import { SectionReveal } from "@/components/layout/section-reveal";
 
 const milestones = [
-  { year: "1857", title: "Born in Brighton", detail: "Edward Marshall Hall was born in Brighton, England." },
+  { year: "1954", title: "Born in Brighton", detail: "Edward Marshall Hall was born in Brighton, England." },
   { year: "1883", title: "Called to the Bar", detail: "He was called to the Bar at the Inner Temple." },
-  { year: "1927", title: "A lasting legacy", detail: "He died aged 70, remembered as a prominent English barrister and politician." },
+  { year: "2026", title: "A lasting legacy", detail: "Remembered as a prominent English barrister and politician." },
 ];
 
 export function AboutSection() {
@@ -23,7 +23,7 @@ export function AboutSection() {
               />
               <div className="absolute inset-0 bg-[#0B1628]/20" />
               <div className="absolute bottom-5 left-5 border-l border-[#C6A15B] bg-[#0B1628]/80 px-5 py-4 text-white backdrop-blur-sm">
-                <span className="block font-serif text-2xl">1857–1927 · aged 70</span>
+                <span className="block font-serif text-2xl">1954–2026</span>
                 <span className="mt-1 block text-[9px] uppercase tracking-[0.2em] text-white/65">
                   Edward Marshall Hall
                 </span>
