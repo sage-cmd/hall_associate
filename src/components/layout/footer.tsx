@@ -72,15 +72,11 @@ export function Footer() {
         <div className="flex flex-col gap-5 pt-6 text-[10px] text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Hall & Associates. Historical-concept website.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="transition-colors hover:text-white">Privacy notice</Link>
-            <Link href="/terms" className="transition-colors hover:text-white">Terms of use</Link>
+            <Link href="/privacy" className="transition-colors hover:text-white">Privacy Policy</Link>
+            <Link href="/terms" className="transition-colors hover:text-white">Terms of Use</Link>
+            <Link href="/legal-disclaimer" className="transition-colors hover:text-white">Legal Disclaimer</Link>
           </div>
         </div>
-        <p id="disclaimer" className="mt-4 max-w-4xl text-[10px] leading-5 text-white/35">
-          Edward Marshall Hall (1858–1927) was a historical English barrister and politician. This website is fictional,
-          is not associated with his estate or any practising law firm, and does not provide legal advice or establish a
-          lawyer–client relationship. Form submissions are stored only as a technical demonstration.
-        </p>
       </div>
     </footer>
   );

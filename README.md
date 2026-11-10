@@ -1,6 +1,6 @@
 # Hall & Associates
 
-An editorial, historical-concept website inspired by Edward Marshall Hall (1858–1927). It is fictional, is not
+An editorial, historical-concept website inspired by Edward Marshall Hall (1857–1927). It is fictional, is not
 affiliated with a practising law firm or historical estate, and does not provide legal services or legal advice.
 
 ## Requirements
@@ -22,7 +22,8 @@ Open [http://localhost:3000](http://localhost:3000). Set `DATABASE_URL` in `.env
 
 The concept form validates submissions with Zod on the server and stores them in PostgreSQL. Do not enter real personal,
 confidential or sensitive information. Submissions are not monitored, do not reach a legal professional, and do not
-create a lawyer–client relationship. See the site's [privacy notice](/privacy) and [terms of use](/terms).
+create a lawyer–client relationship. See the site's [Privacy Policy](/privacy), [Terms of Use](/terms) and
+[Legal Disclaimer](/legal-disclaimer).
 
 ## Validation and production
 

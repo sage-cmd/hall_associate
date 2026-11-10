@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { SectionReveal } from "@/components/layout/section-reveal";
 
 const milestones = [
-  { year: "1858", title: "Born in Brighton", detail: "Edward Marshall Hall was born in Brighton, England." },
+  { year: "1857", title: "Born in Brighton", detail: "Edward Marshall Hall was born in Brighton, England." },
   { year: "1883", title: "Called to the Bar", detail: "He was called to the Bar at the Inner Temple." },
-  { year: "1927", title: "A lasting legacy", detail: "Remembered for his career as a prominent English barrister and politician." },
+  { year: "1927", title: "A lasting legacy", detail: "He died aged 70, remembered as a prominent English barrister and politician." },
 ];
 
 export function AboutSection() {
@@ -24,7 +23,7 @@ export function AboutSection() {
               />
               <div className="absolute inset-0 bg-[#0B1628]/20" />
               <div className="absolute bottom-5 left-5 border-l border-[#C6A15B] bg-[#0B1628]/80 px-5 py-4 text-white backdrop-blur-sm">
-                <span className="block font-serif text-2xl">1858–1927</span>
+                <span className="block font-serif text-2xl">1857–1927 · aged 70</span>
                 <span className="mt-1 block text-[9px] uppercase tracking-[0.2em] text-white/65">
                   Edward Marshall Hall
                 </span>
@@ -33,31 +32,73 @@ export function AboutSection() {
             <span className="absolute -bottom-5 -right-5 -z-0 hidden h-32 w-32 border-b border-r border-[var(--gold)]/50 sm:block" />
           </SectionReveal>
           <SectionReveal className="flex flex-col justify-center">
-            <p className="eyebrow"><span className="eyebrow-rule" /> A name in legal history</p>
+            <p className="eyebrow"><span className="eyebrow-rule" /> Our Story</p>
             <h2 className="section-title mt-6">
-              A formidable voice.
+              A foundation built on principle.
               <br />
-              <span className="italic text-[var(--gold)]">An enduring legacy.</span>
+              <span className="italic text-[var(--gold)]">A commitment to justice.</span>
             </h2>
             <p className="mt-8 max-w-2xl text-base leading-8 text-[var(--muted)]">
-              Edward Marshall Hall (1858–1927) was an English barrister and politician, known in his time as a powerful
-              advocate in the criminal courts. His command of the courtroom became part of the public story of the
-              English Bar at the turn of the twentieth century.
+              Hall &amp; Associates is a distinguished legal practice founded on the principles of integrity, excellence,
+              discretion and an unwavering commitment to justice. Inspired by the enduring traditions of the legal
+              profession, our firm was established with a clear purpose: to provide thoughtful legal guidance, strong
+              representation and practical solutions to individuals, businesses and institutions navigating complex
+              legal matters.
             </p>
             <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--muted)]">
-              This concept draws on the ideals associated with his public legacy: rigorous preparation, clear
-              reasoning, and advocacy that holds the attention without losing sight of principle.
+              We believe that effective legal practice requires more than an understanding of the law. It demands sound
+              judgment, meticulous preparation, strategic thinking and a genuine appreciation of the people and
+              interests behind every case.
             </p>
-            <a href="#legacy" className="mt-8 inline-flex w-fit items-center gap-2 text-sm text-[var(--foreground)] transition-colors hover:text-[var(--gold)]">
-              Explore the historical timeline <ArrowUpRight aria-hidden="true" size={15} />
-            </a>
-            <p className="mt-10 border-l-2 border-[var(--gold)] pl-5 font-serif text-xl italic leading-relaxed text-[var(--foreground)]">
-              “A tradition of advocacy, reimagined for a new generation.”
+            <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--muted)]">
+              Our approach combines traditional legal values with a modern understanding of an increasingly complex
+              legal environment. Whether addressing intricate disputes, advising on commercial matters or representing
+              clients in challenging proceedings, we place careful consideration, professionalism and diligence at the
+              centre of our work.
             </p>
-            <p className="mt-3 pl-5 text-[9px] uppercase tracking-[0.18em] text-[var(--muted)]">
-              Contemporary concept copy · Not a historical quotation
+            <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--muted)]">
+              At Hall &amp; Associates, we regard every matter as a responsibility entrusted to us. Our commitment is to
+              uphold the highest standards of professional conduct while pursuing clear, considered and effective legal
+              outcomes.
+            </p>
+            <p className="mt-8 font-serif text-xl italic leading-relaxed text-[var(--foreground)]">
+              Our foundation is built on principle. Our reputation is earned through diligence. Our purpose is justice.
             </p>
           </SectionReveal>
+        </div>
+      </section>
+
+      <section aria-labelledby="values-heading" className="bg-[var(--background)] py-20 sm:py-24">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14">
+          <SectionReveal>
+            <p className="eyebrow"><span className="eyebrow-rule" /> What guides us</p>
+            <h2 id="values-heading" className="section-title mt-5">Our Core Values</h2>
+          </SectionReveal>
+          <div className="mt-10 grid gap-8 border-t border-[var(--line)] pt-8 md:grid-cols-3">
+            {[
+              {
+                title: "Integrity",
+                description:
+                  "Integrity is the foundation of our practice. We believe in honesty, transparency, confidentiality and ethical responsibility in every professional engagement. We are committed to maintaining the trust placed in us and upholding the principles that define the legal profession.",
+              },
+              {
+                title: "Excellence",
+                description:
+                  "We pursue excellence through meticulous preparation, sound legal judgment and attention to detail. Every matter deserves careful consideration, thoughtful strategy and a commitment to maintaining the highest standards of professional competence.",
+              },
+              {
+                title: "Commitment",
+                description:
+                  "Our commitment extends beyond legal representation. We believe in understanding the concerns, objectives and circumstances of those who entrust us with their matters. We approach every responsibility with dedication, diligence and a determination to pursue the best possible outcome within the law.",
+              },
+            ].map((value, index) => (
+              <SectionReveal key={value.title}>
+                <span className="font-serif text-3xl text-[var(--gold)]">0{index + 1}</span>
+                <h3 className="mt-4 font-serif text-2xl text-[var(--foreground)]">{value.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{value.description}</p>
+              </SectionReveal>
+            ))}
+          </div>
         </div>
       </section>
 
