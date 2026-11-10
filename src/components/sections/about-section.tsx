@@ -3,7 +3,7 @@ import { SectionReveal } from "@/components/layout/section-reveal";
 
 const milestones = [
   { year: "1954", title: "Born in Brighton", detail: "Edward Marshall Hall was born in Brighton, England." },
-  { year: "1883", title: "Called to the Bar", detail: "He was called to the Bar at the Inner Temple." },
+  { year: "1980", title: "Called to the Bar", detail: "He was called to the Bar at the Inner Temple." },
   { year: "2026", title: "A lasting legacy", detail: "Remembered as a prominent English barrister and politician." },
 ];
 
